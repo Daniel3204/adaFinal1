@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejorando</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <img src="./imagenes/1920x1080 Wallpaper dump!.jpg" alt="">
+        </div>
+        <div class="inputs">
+            <h2 id="cantPersonaje"></h2>
+            <nav class="escritorio">
+                <span class="btn-genero" id="mujeres">Mujeres</span>
+                <span class="btn-genero" id="hombres">Hombres</span>
+                <span class="btn-genero" id="sinGenero">Sin genero</span>
+                <span class="btn-genero" id="desconocido">Desconocido</span>
+                <span class="btn-genero" id="todos">Todos</span>
+            </nav>
+            <label for="check" class="hamburguesa">|||</label>
+            <input type="checkbox" id="check">
+            <nav class="movil">
+                <span class="btn-genero" id="mujeres">Mujeres</span>
+                <span class="btn-genero" id="hombres">Hombres</span>
+                <span class="btn-genero" id="sinGenero">Sin genero</span>
+                <span class="btn-genero" id="desconocido">Desconocido</span>
+                <span class="btn-genero" id="todos">Todos</span>
+
+            </nav>
+        </div>
+        
+        <div id="perso" class="personajes-container"></div>
+        <div class="btn-container" id="btn-avanzar">
+            <button class="btn1 first" id="primero" onclick="primero()">
+                << </button>
+                    <button class="btn1 back" id="atras" onclick="atras()">
+                        < </button>
+                            <div id="paginaActual"></div>
+                            <button class="btn1 next" id="siguiente" onclick="avanzar()">></button>
+                            <button class="btn1 last" id="ultimo" onclick="ultimo()">>></button>
+        </div>
+        <div id="cargaPersona-modal"></div>
+    </main>
+    <footer>
+        <p>Copyright © 2022. All rights reserved</p>
+    </footer>
+    <script src="./mejorado.js"></script>
+    <script src="./personajem.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inputs{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    width: 70%;
+}
+.hamburguesa{
+    transform: rotate(90deg);
+}
+.movil{
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 1001;
+    background-color: #272B33;
+    width: 100%;    
+    color:white;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+nav>span{
+    cursor: pointer;
+    padding: 16px;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}   
+nav>span:hover{
+    background-color: #08f;
+    border-radius: 8px;
+}
+.escritorio{
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .movil{
+    height: 400px;
+}
+
+@media(min-width:768px){
+    .escritorio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+    .hamburguesa{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
+</style>
+<body>
+    <div class="inputs">
+        <nav class="escritorio">
+            <span class="btn-genero" id="mujeres">Mujeres</span>
+            <span class="btn-genero" id="hombres">Hombres</span>
+            <span class="btn-genero" id="sinGenero">Sin genero</span>
+            <span class="btn-genero" id="desconocido">Desconocido</span>
+            <span class="btn-genero" id="todos">Todos</span>
+        </nav>
+        <label for="check" class="hamburguesa">|||</label>
+        <input type="checkbox" id="check">
+        <nav class="movil">
+            <span class="btn-genero" id="mujeres">Mujeres</span>
+            <span class="btn-genero" id="hombres">Hombres</span>
+            <span class="btn-genero" id="sinGenero">Sin genero</span>
+            <span class="btn-genero" id="desconocido">Desconocido</span>
+            <span class="btn-genero" id="todos">Todos</span>
+
+        </nav>
+    </div>
+</body>
+</html>
