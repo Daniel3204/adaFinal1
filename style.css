@@ -59,7 +59,10 @@ h2{
 .cardEfect:hover img{
     transform: scale(1.1);
 }
-
+.card-container:hover{
+    box-shadow:1px 1px 10px white, -1px -1px 10px;
+}
+    
 .card-img-container {
     max-width: 200px;
     margin: auto;
